@@ -1,6 +1,7 @@
-import React from "react"
-import NotificationList from "./components/NotificationList"
-import { hot } from "react-hot-loader"
+import React from "react";
+import NotificationList from "./components/NotificationList";
+import { hot } from "react-hot-loader";
+import axios from "axios";
 
 class App extends React.Component {
   constructor() {
@@ -12,13 +13,13 @@ class App extends React.Component {
   }
 
   async fetchNotifications() {
-    try {
-      const res = await fetch("http://localhost:4433/availabilities");
-      const json = await res.json();
-      this.setState({availabilities: json.reverse()});
-    } catch (e) {
-      console.error("Failed to fetch 'notifications' data", e);
-    }
+    axios.get('/notifications')
+      .then(({data}) => {
+        console.log(data)
+      })
+      .catch((e) => {
+        console.log('Error fetching notifications', e)
+      })
   }
 
   componentDidMount() {
