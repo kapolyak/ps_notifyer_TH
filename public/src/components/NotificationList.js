@@ -2,13 +2,19 @@ import React from "react";
 import Notification from "./Notification";
 
 class NotificationList extends React.Component {
-  render() {
+  render(props) {
     return (
       <div>
         <h3>Notification List</h3>
-        <Notification />
-        <Notification />
-        <Notification />
+        {this.props.notifications.map(notification => {
+          return (
+            <Notification 
+              title={notification.title}
+              date={notification.date}
+              body={notification.body}
+            />
+          )
+        })}
       </div>
     );
   }

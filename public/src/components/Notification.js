@@ -1,9 +1,13 @@
 import React from "react"
 
 class Notification extends React.Component {
-  render() {
+  render(props) {
     return (
-      <div>Notification</div>
+      <div>
+        <h1>{this.props.title}</h1>
+        <h2>{this.props.date}</h2>
+        <div>{this.props.body}</div>
+      </div>
     );
   }
 }

@@ -15,13 +15,10 @@ module.exports = {
     let notifications = jsonObj['Notifications']
     let resultArray = [];
     for (let key in notifications) {
-      console.log('key', key);
-      console.log('val', notifications[key]);
       let notificationObj = {};
       notificationObj.title = key;
       notificationObj.date = Object.keys(notifications[key])[0]
       notificationObj.body = Object.values(notifications[key])[0]['raw']
-      console.log(notificationObj)
       resultArray.push(notificationObj)
     }
     return resultArray
