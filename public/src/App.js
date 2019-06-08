@@ -1,5 +1,6 @@
 import React from "react";
 import NotificationList from "./components/NotificationList";
+import Header from "./components/Header"
 import { hot } from "react-hot-loader";
 import axios from "axios";
 
@@ -9,7 +10,7 @@ class App extends React.Component {
     this.state = {
       notifications: [
         {title: 'Event 1', body: "Things about this", date: "05/01/19"},
-        {title: 'Event 2', body: "Things about this, there is more.", date: "05/02/19"},
+        {title: 'Event 2', body: "Things about this, there is more. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum.", date: "05/02/19"},
         {title: 'Event 3', body: "Things, not much", date: "05/03/19"}
       ]
     };
@@ -34,7 +35,7 @@ class App extends React.Component {
     const state = this.state;
     return (
       <div className="app">
-        <h1>Notifier</h1>
+        <Header />
         <NotificationList notifications={state.notifications}/>
       </div>
     );
