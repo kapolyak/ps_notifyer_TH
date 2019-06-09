@@ -38,7 +38,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    // this.fetchNotifications();
+    this.fetchNotifications();
     this.fetchToday();
   }
 

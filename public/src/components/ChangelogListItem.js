@@ -4,9 +4,9 @@ class ChangelogListItem extends React.Component {
   render(props) {
     return (
       <div className="changelog-list-item-container">
-        <h1>{this.props.title}</h1>
-        <h2>{this.props.date}</h2>
-        <div>{this.props.body}</div>
+        <h2 className="title">{this.props.title}</h2>
+        <div className="time">{this.props.date}</div>
+        <div className="body">{this.props.body}</div>
       </div>
     );
   }

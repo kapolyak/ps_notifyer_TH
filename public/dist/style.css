@@ -61,10 +61,36 @@ body {
   margin-left: 25%;
 }
 
-.changelog-list-item-container {
-  margin-top: 10px;
-}
-
 .changelog-list-container {
   border-top: 1px solid #f3f3f3;
+}
+
+.changelog-list-item-container {
+  margin-top: 10px;
+  position: relative;
+  border-bottom: 1px solid #f3f3f3;
+  padding: 25px 0;
+}
+
+.changelog-list-item-container .title {
+  font-size: 1.55rem;
+  font-weight: 500;
+  line-height: 1.9rem;
+  min-height: 35px;
+}
+
+.changelog-list-item-container .time {
+  position: absolute;
+  top: 30px;
+  left: -130px;
+  opacity: 1;
+  width: 120px;
+  line-height: 1.45;
+  transition: opacity .3s ease;
+}
+
+.changelog-list-item-container .body {
+  line-height: 1.55rem;
+  min-height: 40px;
+  clear: both;
 }
