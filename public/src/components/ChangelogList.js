@@ -8,6 +8,7 @@ class ChangelogList extends React.Component {
         {this.props.notifications.map(notification => {
           return (
             <ChangelogListItem 
+              key={notification.title}
               title={notification.title}
               date={notification.date}
               body={notification.body}
