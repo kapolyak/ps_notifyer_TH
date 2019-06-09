@@ -8,11 +8,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      notifications: [
-        {title: 'Event 1', body: "Things about this", date: "05/01/19"},
-        {title: 'Event 2', body: "Things about this, there is more. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum. Lorem Ipsum.", date: "05/02/19"},
-        {title: 'Event 3', body: "Things, not much", date: "05/03/19"}
-      ]
+      notifications: []
     };
     this.fetchNotifications = this.fetchNotifications.bind(this);
   }
@@ -45,11 +41,13 @@ class App extends React.Component {
   render() {
     const state = this.state;
     return (
-      <div className="app">
+      <React.Fragment>
         <Header />
-        <div className="main"></div>
-        <ChangelogList notifications={state.notifications}/>
-      </div>
+          <div className="app">
+            <div className="main"></div>
+            <ChangelogList notifications={state.notifications}/>
+          </div>
+      </React.Fragment>
     );
   }
 }
