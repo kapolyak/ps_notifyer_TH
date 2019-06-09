@@ -1,7 +1,6 @@
 import React from "react";
 import ChangelogList from "./components/ChangelogList";
 import Header from "./components/Header";
-import Notifications from "./components/Notifications";
 import { hot } from "react-hot-loader";
 import axios from "axios";
 
@@ -55,11 +54,7 @@ class App extends React.Component {
     const state = this.state;
     return (
       <React.Fragment>
-        <Header toggleModal={this.toggleModal}/>
-        {state.modalVisible ? 
-          <Notifications /> :
-          null
-        }
+        <Header modalVisible={this.state.modalVisible} toggleModal={this.toggleModal}/>
         <div className="main">
           <ChangelogList notifications={state.notifications}/>
         </div>
