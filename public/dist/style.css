@@ -20,18 +20,51 @@ time, mark, audio, video {
 }
 
 body {
+  color: #47525d;
   margin-left: 25%;
   margin-right: 25%;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  padding-left: 55px;
+  font-size: 15px;
+  padding-bottom: 100px;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
+  font-family: Graphik Web,Helvetica Neue,Helvetica,Arial,Tahoma,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.main {
+  padding-top: 145px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: inherit;
+}
+
+.changelog-list-container {
+  border-top: 1px solid #f3f3f3;
 }
 
 .header-container {
+  box-shadow: 0 1px 0 rgba(0,0,0,.05);
+  z-index: 100;
   color: red;
   display: flex;
   flex-direction: column;
+  height: 70px;
+  position: fixed;
+  left: 55px;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 25%;
+}
+
+.changelog-item-container {
+  margin-top: 10px;
 }

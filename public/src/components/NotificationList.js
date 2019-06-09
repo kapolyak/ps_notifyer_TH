@@ -4,8 +4,7 @@ import Notification from "./Notification";
 class NotificationList extends React.Component {
   render(props) {
     return (
-      <div>
-        <h3>Notification List</h3>
+      <div className="notification-list-container">
         {this.props.notifications.map(notification => {
           return (
             <Notification 

@@ -47,6 +47,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <Header />
+        <div className="main"></div>
         <NotificationList notifications={state.notifications}/>
       </div>
     );
