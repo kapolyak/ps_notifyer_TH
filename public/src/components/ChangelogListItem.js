@@ -1,9 +1,9 @@
 import React from "react"
 
-class Notification extends React.Component {
+class ChangelogListItem extends React.Component {
   render(props) {
     return (
-      <div className="notification-container">
+      <div className="changelog-list-item-container">
         <h1>{this.props.title}</h1>
         <h2>{this.props.date}</h2>
         <div>{this.props.body}</div>
@@ -12,4 +12,4 @@ class Notification extends React.Component {
   }
 }
 
-export default Notification
+export default ChangelogListItem

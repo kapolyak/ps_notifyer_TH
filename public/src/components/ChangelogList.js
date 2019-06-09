@@ -1,13 +1,13 @@
 import React from "react";
-import Notification from "./Notification";
+import ChangelogListItem from "./ChangelogListItem";
 
-class NotificationList extends React.Component {
+class ChangelogList extends React.Component {
   render(props) {
     return (
-      <div className="notification-list-container">
+      <div className="changelog-list-container">
         {this.props.notifications.map(notification => {
           return (
-            <Notification 
+            <ChangelogListItem 
               title={notification.title}
               date={notification.date}
               body={notification.body}
@@ -19,4 +19,4 @@ class NotificationList extends React.Component {
   }
 }
 
-export default NotificationList
+export default ChangelogList

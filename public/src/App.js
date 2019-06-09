@@ -1,5 +1,5 @@
 import React from "react";
-import NotificationList from "./components/NotificationList";
+import ChangelogList from "./components/ChangelogList";
 import Header from "./components/Header"
 import { hot } from "react-hot-loader";
 import axios from "axios";
@@ -48,7 +48,7 @@ class App extends React.Component {
       <div className="app">
         <Header />
         <div className="main"></div>
-        <NotificationList notifications={state.notifications}/>
+        <ChangelogList notifications={state.notifications}/>
       </div>
     );
   }
