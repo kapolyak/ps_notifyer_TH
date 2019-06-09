@@ -20,4 +20,12 @@ app.get('/notifications', (req, res) => {
   });
 })
 
+app.get('/today', (req, res) => {
+  res.send(today());
+})
+
+function today() {
+  return new Date().toLocaleDateString();
+}
+
 module.exports = app;

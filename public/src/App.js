@@ -27,8 +27,19 @@ class App extends React.Component {
       })
   }
 
+  async fetchToday() {
+    axios.get('/today')
+      .then(({data}) => {
+        this.setState({today: data})
+      })
+      .catch((e) => {
+        console.log('Error fetching today', e)
+      })
+  }
+
   componentDidMount() {
     // this.fetchNotifications();
+    this.fetchToday();
   }
 
   render() {
