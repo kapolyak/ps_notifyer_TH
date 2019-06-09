@@ -54,7 +54,7 @@ class App extends React.Component {
     const state = this.state;
     return (
       <React.Fragment>
-        <Header modalVisible={this.state.modalVisible} toggleModal={this.toggleModal}/>
+        <Header notifications={state.notifications} modalVisible={this.state.modalVisible} toggleModal={this.toggleModal}/>
         <div className="main">
           <ChangelogList notifications={state.notifications}/>
         </div>
