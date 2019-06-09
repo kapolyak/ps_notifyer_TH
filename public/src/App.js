@@ -1,6 +1,7 @@
 import React from "react";
 import ChangelogList from "./components/ChangelogList";
-import Header from "./components/Header"
+import Header from "./components/Header";
+import Notifications from "./components/Notifications";
 import { hot } from "react-hot-loader";
 import axios from "axios";
 
@@ -9,9 +10,12 @@ class App extends React.Component {
     super();
     this.state = {
       user: 'kapolyak',
-      notifications: []
+      notifications: [],
+      hasNotifications: false,
+      modalVisible: false
     };
     this.fetchNotifications = this.fetchNotifications.bind(this);
+    this.toggleModal = this.toggleModal.bind(this);
   }
 
   async fetchNotifications() {
@@ -39,11 +43,23 @@ class App extends React.Component {
     this.fetchToday();
   }
 
+  toggleModal() {
+    if (this.state.modalVisible) {
+      this.setState({modalVisible: false})
+    } else {
+      this.setState({modalVisible: true})
+    }
+  }
+
   render() {
     const state = this.state;
     return (
       <React.Fragment>
-        <Header />
+        <Header toggleModal={this.toggleModal}/>
+        {state.modalVisible ? 
+          <Notifications /> :
+          null
+        }
         <div className="main">
           <ChangelogList notifications={state.notifications}/>
         </div>

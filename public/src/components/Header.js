@@ -7,7 +7,7 @@ class Header extends React.Component {
       <header className="header-container">
         <div className="content">
           <h1 className="header-logo">Paperspace Changelog</h1>
-          <Avatar />
+          <Avatar toggleModal={this.props.toggleModal}/>
         </div>
       </header>
     );
