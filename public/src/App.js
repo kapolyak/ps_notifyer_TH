@@ -43,10 +43,9 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <Header />
-          <div className="app">
-            <div className="main"></div>
-            <ChangelogList notifications={state.notifications}/>
-          </div>
+        <div className="main">
+          <ChangelogList notifications={state.notifications}/>
+        </div>
       </React.Fragment>
     );
   }

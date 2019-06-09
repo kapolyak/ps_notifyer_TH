@@ -4,8 +4,10 @@ class Header extends React.Component {
   render(props) {
     return (
       <header className="header-container">
-        <h1 className="header-logo">Paperspace Changelog</h1>
-        <div className="avatar">Avatar</div>
+        <div className="content">
+          <h1 className="header-logo">Paperspace Changelog</h1>
+          <div className="avatar">Avatar</div>
+        </div>
       </header>
     );
   }
