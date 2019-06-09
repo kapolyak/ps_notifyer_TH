@@ -8,6 +8,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      user: 'kapolyak',
       notifications: []
     };
     this.fetchNotifications = this.fetchNotifications.bind(this);
