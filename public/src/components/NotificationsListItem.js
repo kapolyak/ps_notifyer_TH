@@ -4,7 +4,8 @@ class NotificationsListItem extends React.Component {
   render(props) {
     return (
       <div>
-        hi
+        <div>{this.props.title}</div>
+        <div>{this.props.body}</div>
       </div>
     );
   }

@@ -5,9 +5,13 @@ class NotificationsList extends React.Component {
   render(props) {
     return (
       <div className="changelog-list-container">
-        {this.props.notifications.map(notification => {
+        {this.props.notifications.map((notification, i) => {
           return (
             <NotificationsListItem
+            key={i}
+            title={notification.title}
+            date={notification.date}
+            body={notification.body}
             />
           )
         })}

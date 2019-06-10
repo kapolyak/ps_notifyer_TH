@@ -78,8 +78,7 @@ body {
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   margin-top: 50px; /* Location of the box */
-  left: 500px;
-  top: 0;
+  top: -30px;
   width: 500px; /* Full width */
   height: 800px; /* Full height */
   /* overflow: auto;  */
