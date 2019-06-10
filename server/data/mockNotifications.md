@@ -1,34 +1,33 @@
-# Notifications
-## title
+# title
 Email Update
-### date
+## date
 7/16/2018
-### tag
+## tag
 new
-### body 
+## body 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-## title
+# title
 Bug Fix
-### date
+## date
 7/12/2018
-### tag
+## tag
 Fix
-### body 
+## body 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-## title
+# title
 Feature Update
-### date
+## date
 7/09/2018
-### tag
+## tag
 new
-### body 
+## body 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-## title
+# title
 Another Update
-### date
+## date
 7/01/2018
-### tag
+## tag
 new
-### body 
+## body 
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
