@@ -103,6 +103,17 @@ body {
   padding-bottom: 10px;
 }
 
+.notifications-list-container {
+  border-top: 1px solid #f3f3f3;
+}
+
+.notifications-list-item-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  padding: 5px 0;
+}
+
 .changelog-list-container {
   border-top: 1px solid #f3f3f3;
 }
