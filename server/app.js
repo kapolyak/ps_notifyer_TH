@@ -3,7 +3,10 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const path = require("path");
-const helpers = require("./api/helpers.js")
+const helpers = require("./api/helpers.js");
+const mockNots = require("./data/mockNotifications.json");
+
+console.log(mockNots);
 
 const app = express();
 
@@ -16,7 +19,7 @@ app.use(express.static(path.join(__dirname, '/../public/dist')));
 app.get('/notifications', (req, res) => {
   helpers.getNotifications((response) => {
     let result = helpers.processData(response);
-    res.send(result);
+    res.send(mockNots['Notifications']);
   });
 })
 

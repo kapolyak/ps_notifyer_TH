@@ -12,6 +12,7 @@ module.exports = {
   },
 
   processData: (jsonObj) => {
+    console.log(jsonObj);
     let notifications = jsonObj['Notifications']
     let resultArray = [];
     for (let key in notifications) {

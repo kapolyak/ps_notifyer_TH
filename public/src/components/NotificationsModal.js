@@ -5,11 +5,17 @@ class NotificationsModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      page: 1
+      title: "Latest Changes",
+      selectedNotification: 0
     }
   }
 
   render(props) {
+
+    if (this.state.selectedNotification !== 0) {
+      headerText = this.state.title
+    }
+
     return (
       <div className="notifications-modal">
         <div className="notifications-content">
