@@ -1,7 +1,7 @@
 import React from "react"
 
 class ChangelogListItem extends React.Component {
-  render(props) {
+  render() {
     return (
       <div className="changelog-list-item-container">
         <h2 className="title">{this.props.title}</h2>

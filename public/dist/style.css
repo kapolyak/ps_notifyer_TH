@@ -1,9 +1,8 @@
-html, body, div, span, applet, object, iframe,
+html, body, div, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+small, strike, strong, sub, sup, tt, var, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -112,6 +111,34 @@ body {
   margin-bottom: 5px;
   position: relative;
   padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.notifications-list-item-container .tag {
+  margin-right: 10px;
+  position: relative;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0 8px;
+  font-size: 12px;
+  height: 20px;
+  line-height: 19px;
+  -webkit-appearance: none;
+}
+
+.notifications-list-item-container .tag-container {
+  margin: 5px 0 15px;
+  display: flex;
+}
+
+.notifications-list-item-container .title {
+ 
+}
+
+.notifications-list-item-container .body {
+  
 }
 
 .changelog-list-container {

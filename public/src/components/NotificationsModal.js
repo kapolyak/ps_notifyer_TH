@@ -6,13 +6,18 @@ class NotificationsModal extends React.Component {
     super(props);
     this.state = {
       title: "Latest Changes",
-      selectedNotification: 0
+      selectedNotification: null,
+      notifications: this.props.changelogs
     }
+    this.selectNotification = this.selectNotification.bind(this);
   }
 
-  render(props) {
+  selectNotification() {
 
-    if (this.state.selectedNotification !== 0) {
+  }
+
+  render() {
+    if (this.state.selectedNotification !== null) {
       headerText = this.state.title
     }
 
@@ -22,7 +27,7 @@ class NotificationsModal extends React.Component {
           <div className="header">
             <h2>Latest Changes</h2>
           </div>
-          <NotificationsList notifications={this.props.notifications}/>
+          <NotificationsList selectNotification={this.selectNotification} notifications={this.props.notifications}/>
         </div>
       </div>
     );

@@ -1,11 +1,23 @@
 import React from "react";
 
 class NotificationsListItem extends React.Component {
-  render(props) {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(e) {
+    console.log(e.target)
+    this.props.handleClick()
+  }
+  
+  render() {
     return (
       <div className="notifications-list-item-container">
-        <div>{this.props.title}</div>
-        <div>{this.props.body}</div>
+        <span className="tag-container">
+            <span className="tag category-1">New</span>
+        </span>
+        <span className="body"><b onClick={this.handleClick}>{this.props.title}</b> {this.props.body}</span>
       </div>
     );
   }

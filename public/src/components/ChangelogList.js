@@ -2,16 +2,16 @@ import React from "react";
 import ChangelogListItem from "./ChangelogListItem";
 
 class ChangelogList extends React.Component {
-  render(props) {
+  render() {
     return (
       <div className="changelog-list-container">
-        {this.props.notifications.map(notification => {
+        {this.props.changelogs.map(changelog => {
           return (
             <ChangelogListItem 
-              key={notification.title}
-              title={notification.title}
-              date={notification.date}
-              body={notification.body}
+              key={changelog.title}
+              title={changelog.title}
+              date={changelog.date}
+              body={changelog.body}
             />
           )
         })}
