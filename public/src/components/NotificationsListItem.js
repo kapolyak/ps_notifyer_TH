@@ -7,8 +7,8 @@ class NotificationsListItem extends React.Component {
   }
 
   handleClick(e) {
-    console.log(e.target)
-    this.props.handleClick()
+    console.log(e.target.id)
+    this.props.handleClick(e.target.id)
   }
   
   render() {
@@ -17,7 +17,7 @@ class NotificationsListItem extends React.Component {
         <span className="tag-container">
             <span className="tag category-1">New</span>
         </span>
-        <span className="body"><b onClick={this.handleClick}>{this.props.title}</b> {this.props.body}</span>
+        <span className="body"><b id={this.props.id} onClick={this.handleClick}>{this.props.title}</b> {this.props.body}</span>
       </div>
     );
   }

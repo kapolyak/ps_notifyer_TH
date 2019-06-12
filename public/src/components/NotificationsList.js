@@ -7,8 +7,8 @@ class NotificationsList extends React.Component {
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick(i) {
-    
+  handleClick(id) {
+    this.props.selectNotification(id);
   }
 
   render(props) {
@@ -18,6 +18,7 @@ class NotificationsList extends React.Component {
           return (
             <NotificationsListItem
               key={i}
+              id={notification.id}
               title={notification.title}
               date={notification.date}
               body={notification.body}
