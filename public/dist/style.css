@@ -77,17 +77,18 @@ body {
   position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
   margin-top: 50px; /* Location of the box */
-  top: -30px;
+  top: -10px;
   width: 500px; /* Full width */
   height: 800px; /* Full height */
   /* overflow: auto;  */
+  
 }
 
 .notifications-content {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   width: 80%;
   overflow: auto; 
 }
