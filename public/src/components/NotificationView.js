@@ -8,7 +8,7 @@ class NotificationView extends React.Component {
   render() {
     return (
       <div className="notificationView-container">
-        <div className="tag-container">
+        <div className="notification-tag-container">
             <div className="tag category-1">New</div>
         </div>
         <div className="body">{this.props.notification.body}</div>
