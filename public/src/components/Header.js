@@ -7,7 +7,7 @@ class Header extends React.Component {
       <React.Fragment>
         <header className="header-container">
           <div className="content">
-            <h1 className="header-logo">Paperspace Changelog</h1>
+            <h1 className="header-logo"><div>Paperspace</div>Changelog</h1>
             <Avatar notifications={this.props.notifications} modalVisible={this.props.modalVisible} toggleModal={this.props.toggleModal}/>
           </div>
         </header>
