@@ -84,7 +84,7 @@ body {
   z-index: 1; /* Sit on top */
   margin-top: 50px; /* Location of the box */
   top: -10px;
-  width: 500px; /* Full width */
+  width: 400px; /* Full width */
   height: 800px; /* Full height */
   /* overflow: auto;  */
   
@@ -121,7 +121,7 @@ body {
 }
 
 .notifications-list-container {
-  border-top: 1px solid #f3f3f3;
+  
 }
 
 .notifications-list-item-container {
@@ -132,6 +132,11 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.notificationView-container {
+  margin-top: 5px;
+  padding: 5px 0;
 }
 
 .tag {
@@ -220,5 +225,19 @@ body {
   height: 20px;
   line-height: 19px;
   -webkit-appearance: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .notifications-modal  {
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    margin-top: 50px; /* Location of the box */
+    top: -10px;
+    width: 400px; /* Full width */
+    height: 800px; /* Full height */
+    left: -350px;
+    /* overflow: auto;  */
+    
+  }
 }
 
