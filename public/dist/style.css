@@ -85,18 +85,14 @@ body {
   margin-top: 50px; /* Location of the box */
   top: -10px;
   width: 400px; /* Full width */
-  height: 800px; /* Full height */
   overflow: hidden; 
-}
-
-.notifications-content {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  width: 80%;
-  overflow: hidden;
-  height: auto;
+  min-height: 300px;
+}
+
+.notifications-content .card {
+  position: relative;
 }
 
 .notifications-content .header {
@@ -177,15 +173,6 @@ body {
   border: 1px solid #ff4772;
 }
 
-
-.notifications-list-item-container .title {
- 
-}
-
-.notifications-list-item-container .body {
-  
-}
-
 .changelog-list-container {
   border-top: 1px solid #f3f3f3;
 }
@@ -226,8 +213,9 @@ body {
   display: flex;
 }
 
-.slide-out {
+.card {
   position: relative;
+  padding: 20px;
 }
 
 .example-enter {

@@ -41,14 +41,14 @@ class NotificationsModal extends React.Component {
               transitionLeaveTimeout={0}
             >
               {this.state.displayNotification === false ? 
-                <div key={"list"} className="slide-out">
+                <div key={"list"} className="card">
                   <div className="header">
                     <h2>Latest Changes</h2>
                   </div>
                   <NotificationsList selectNotification={this.selectNotification} notifications={this.props.notifications}/>
                 </div>
               :
-                <div className="slide-out" key={"view"}>
+                <div className="card" key={"view"}>
                   <div className="header">
                     <div onClick={this.renderLatestChanges} className="arrow-container">
                       <svg className="arrow" viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false">
