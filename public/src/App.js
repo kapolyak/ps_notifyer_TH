@@ -10,17 +10,22 @@ class App extends React.Component {
     this.state = {
       user: 'kapolyak',
       changelogs: [],
+      latestChangelogSeenById: 5,
       hasNotifications: false,
-      modalVisible: false
+      notifications: [],
+      modalVisible: false,
     };
     this.fetchChangelogs = this.fetchChangelogs.bind(this);
     this.toggleModal = this.toggleModal.bind(this);
+    this.checkNotifications = this.checkNotifications.bind(this);
   }
 
   async fetchChangelogs() {
-    axios.get('/notifications')
+    axios.get('/changelogs')
       .then(({data}) => {
-        this.setState({changelogs: data})
+        this.setState({changelogs: data}, () => {
+          this.checkNotifications();
+        })
       })
       .catch((e) => {
         console.log('Error fetching notifications', e)
@@ -50,11 +55,18 @@ class App extends React.Component {
     }
   }
 
+  checkNotifications() {
+    let latestChangelogSeen = document.cookie;
+    console.log('challegd');
+    let notifications = this.state.changelogs.slice(5);
+    this.setState({notifications: notifications})
+  }
+
   render() {
     const state = this.state;
     return (
       <React.Fragment>
-        <Header notifications={state.changelogs} changelogs={state.changelogs} modalVisible={this.state.modalVisible} toggleModal={this.toggleModal}/>
+        <Header notifications={state.notifications} changelogs={state.changelogs} modalVisible={this.state.modalVisible} toggleModal={this.toggleModal}/>
         <div className="main">
           <ChangelogList changelogs={state.changelogs}/>
         </div>

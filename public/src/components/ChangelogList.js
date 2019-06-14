@@ -5,10 +5,10 @@ class ChangelogList extends React.Component {
   render() {
     return (
       <div className="changelog-list-container">
-        {this.props.changelogs.map(changelog => {
+        {this.props.changelogs.map((changelog, i) => {
           return (
             <ChangelogListItem 
-              key={changelog.title}
+              key={i}
               title={changelog.title}
               date={changelog.date}
               body={changelog.body}
