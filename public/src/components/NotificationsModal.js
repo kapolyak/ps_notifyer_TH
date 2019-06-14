@@ -44,7 +44,7 @@ class NotificationsModal extends React.Component {
               {this.state.displayNotification === false ? 
                 <div key={"list"} className="card">
                   <div className="header">
-                    <h2>Latest Changes</h2>
+                    <h2>{this.state.title}</h2>
                   </div>
                   <NotificationsList selectNotification={this.selectNotification} notifications={this.props.notifications}/>
                 </div>
