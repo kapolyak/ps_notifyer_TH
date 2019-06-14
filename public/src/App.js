@@ -10,7 +10,7 @@ class App extends React.Component {
     this.state = {
       user: 'kapolyak',
       changelogs: [],
-      latestChangelogSeenById: 0,
+      latestChangelogSeenById: 5,
       hasNotifications: false,
       notifications: [],
       modalVisible: false
