@@ -23,13 +23,3 @@ class ChangelogListItem extends React.Component {
 }
 
 export default ChangelogListItem
-
-// let tagClass = `tag category-${this.props.tag}`
-//     return (
-//       <div className="notifications-list-item-container">
-//         <span className="notification-tag-container">
-//             <span className={tagClass}>{tagLookup[this.props.tag]}</span>
-//         </span>
-//         <span className="body"><a><b id={this.props.id} onClick={this.handleClick}>{this.props.title}.</b></a> {this.props.body}</span>
-//       </div>
-//     );
