@@ -8,21 +8,19 @@
     "build": "webpack",
     "build-dev": "webpack --mode development --watch",
     "start-dev": "nodemon server/server.js",
-    "test": "jest"
+    "test": "jest",
+    "start": "node server/server.js"
   },
   "dependencies": {
     "axios": "^0.19.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "md-2-json": "^1.0.5",
-    "morgan": "^1.9.1",
-    "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.8.4",
     "react-transition-group": "^1.2.1",
-    "supertest": "^4.0.2",
     "victory": "^32.2.2"
   },
   "devDependencies": {
@@ -42,7 +40,10 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.2"
+    "webpack-cli": "^3.3.2",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
   },
   "repository": {
     "type": "git",
@@ -53,5 +54,18 @@
   "bugs": {
     "url": "https://github.com/kapolyak/ps_notifyer_TH/issues"
   },
-  "homepage": "https://github.com/kapolyak/ps_notifyer_TH#readme"
+  "homepage": "https://github.com/kapolyak/ps_notifyer_TH#readme",
+  "jest": {
+    "verbose": true,
+    "collectCoverage": true,
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost/"
+  }
 }
