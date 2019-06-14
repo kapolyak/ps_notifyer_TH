@@ -1,12 +1,19 @@
 import React from "react"
 
+const tagLookup = {
+  1: 'New',
+  2: 'Bug fix',
+  3: 'Improvement'
+}
+
 class ChangelogListItem extends React.Component {
   render() {
+    let tagClass = `tag category-${this.props.tag}`
     return (
       <div className="changelog-list-item-container">
         <h2 className="title">{this.props.title}</h2>
         <div className="tag-container">
-          <div className="tag category-1">New</div>
+          <div className={tagClass}>{tagLookup[this.props.tag]}</div>
         </div>
         <div className="time">{this.props.date}</div>
         <div className="body">{this.props.body}</div>
@@ -16,3 +23,13 @@ class ChangelogListItem extends React.Component {
 }
 
 export default ChangelogListItem
+
+// let tagClass = `tag category-${this.props.tag}`
+//     return (
+//       <div className="notifications-list-item-container">
+//         <span className="notification-tag-container">
+//             <span className={tagClass}>{tagLookup[this.props.tag]}</span>
+//         </span>
+//         <span className="body"><a><b id={this.props.id} onClick={this.handleClick}>{this.props.title}.</b></a> {this.props.body}</span>
+//       </div>
+//     );

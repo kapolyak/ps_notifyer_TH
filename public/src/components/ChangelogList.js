@@ -12,6 +12,7 @@ class ChangelogList extends React.Component {
               title={changelog.title}
               date={changelog.date}
               body={changelog.body}
+              tag={changelog.tag}
             />
           )
         })}

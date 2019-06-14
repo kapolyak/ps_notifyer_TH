@@ -1,6 +1,7 @@
 import React from "react"
 import NotificationsList from "./NotificationsList"
 import NotificationView from "./NotificationView"
+import { CSSTransition } from 'react-transition-group';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; 
 
 class NotificationsModal extends React.Component {
@@ -36,7 +37,7 @@ class NotificationsModal extends React.Component {
         <div className="notifications-modal">
           <div className="notifications-content">
             <ReactCSSTransitionGroup
-              transitionName="example"
+              transitionName="card"
               transitionEnterTimeout={0}
               transitionLeaveTimeout={0}
             >
@@ -51,7 +52,7 @@ class NotificationsModal extends React.Component {
                 <div className="card" key={"view"}>
                   <div className="header">
                     <div onClick={this.renderLatestChanges} className="arrow-container">
-                      <img width="100%" src="https://img.icons8.com/ios/50/000000/back.png" />
+                      <img width="100%" src="https://img.icons8.com/windows/32/000000/back.png" />
                     </div>
                     <h2>{this.props.notifications[this.state.selectedNotificationIndex].title}</h2>
                     <div className="header-balance-invisible"></div>
@@ -61,6 +62,37 @@ class NotificationsModal extends React.Component {
               } 
             </ReactCSSTransitionGroup>
           </div>
+          {/* <div className="notifications-content">
+            <CSSTransition
+              in={!this.state.displayNotification}
+              timeout={300}
+              classNames="display"
+            >
+              <div key={"list"} className="card">
+                <div className="header">
+                  <h2>Latest Changes</h2>
+                </div>
+                <NotificationsList selectNotification={this.selectNotification} notifications={this.props.notifications}/>
+              </div>
+            </CSSTransition>
+            <CSSTransition
+              in={this.state.displayNotification}
+              timeout={300}
+              classNames="display"
+            >
+                <div className="card" key={"view"}>
+                  <div className="header">
+                    <div onClick={this.renderLatestChanges} className="arrow-container">
+                      <img width="100%" src="https://img.icons8.com/windows/32/000000/back.png" />
+                    </div>
+                    <h2>{this.props.notifications[this.state.selectedNotificationIndex].title}</h2>
+                    <div className="header-balance-invisible"></div>
+                  </div>
+                  <NotificationView notification={currentNotification} />
+                </div>
+              } 
+            </CSSTransition>
+          </div> */}
         </div>
       );
   }

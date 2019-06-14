@@ -173,6 +173,11 @@ body {
   border: 1px solid #ff4772;
 }
 
+.category-3 {
+  background: #2ab325;
+  border: 1px solid #2ab325;
+}
+
 .changelog-list-container {
   border-top: 1px solid #f3f3f3;
 }
@@ -218,27 +223,29 @@ body {
   padding: 20px;
 }
 
-.example-enter {
+.card-enter {
   transform: translate(100%);
   position: absolute;
 }
 
-.example-enter.example-enter-active {
+.card-enter.card-enter-active {
   transform: translate(0%);
   transition: transform 500ms ease-in-out;
   position: absolute;
 }
 
-.example-leave {
+.card-leave {
   transform: translate(0%);
   position: absolute;
 }
 
-.example-leave.example-leave-active {
+.card-leave.card-leave-active {
   transform: translate(-100%);
   transition: transform 500ms ease-in-out;
   position: absolute;
 }
+
+
 
 
 @media only screen and (max-width: 1200px) {
