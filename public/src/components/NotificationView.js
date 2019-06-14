@@ -12,6 +12,7 @@ class NotificationView extends React.Component {
             <div className="tag category-1">New</div>
         </div>
         <div className="body">{this.props.notification.body}</div>
+        <div className="read-more"><a><b>Read the whole post</b></a></div>
       </div>
     );
   }

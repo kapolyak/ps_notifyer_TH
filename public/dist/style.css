@@ -143,7 +143,7 @@ body {
 }
 
 .notification-tag-container {
-  display: inline-block;
+  display: inline-flex;
   height: 100%;
 }
 
@@ -154,14 +154,14 @@ body {
   border-radius: 20px;
   padding: 0 8px;
   font-size: 12px;
-  height: 20px;
+  height: 17px;
   line-height: 19px;
   -webkit-appearance: none;
 }
 
 .tag-container {
   margin: 5px 0 15px;
-  display: flex;
+  vertical-align: center;
 }
 
 .category-1 {
@@ -223,7 +223,7 @@ body {
   display: flex;
 }
 
-.changelog-list-item-container .tag {
+/* .changelog-list-item-container .tag {
   margin-right: 10px;
   position: relative;
   color: #fff;
@@ -233,7 +233,7 @@ body {
   height: 20px;
   line-height: 19px;
   -webkit-appearance: none;
-}
+} */
 
 @media only screen and (max-width: 1200px) {
   .notifications-modal  {
