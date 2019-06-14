@@ -10,10 +10,10 @@ class App extends React.Component {
     this.state = {
       user: 'kapolyak',
       changelogs: [],
-      latestChangelogSeenById: 5,
+      latestChangelogSeenById: 0,
       hasNotifications: false,
       notifications: [],
-      modalVisible: false,
+      modalVisible: false
     };
     this.fetchChangelogs = this.fetchChangelogs.bind(this);
     this.toggleModal = this.toggleModal.bind(this);
@@ -56,9 +56,7 @@ class App extends React.Component {
   }
 
   checkNotifications() {
-    let latestChangelogSeen = document.cookie;
-    console.log('challegd');
-    let notifications = this.state.changelogs.slice(5);
+    let notifications = this.state.changelogs.slice(this.state.latestChangelogSeenById);
     this.setState({notifications: notifications})
   }
 

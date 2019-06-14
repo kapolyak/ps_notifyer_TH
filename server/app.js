@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const morgan = require("morgan");
 const path = require("path");
 const helpers = require("./api/helpers.js");
-const mockNots = require("./data/mockNotifications.json");
 const app = express();
 
 app.use(cors());
