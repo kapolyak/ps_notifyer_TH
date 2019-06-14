@@ -49,7 +49,7 @@ body {
   position: fixed;
   width: 100%;
   transition: top 0.2s ease-in-out;
-  z-index: 1; /* Sit on top */
+  z-index: 1; 
   padding-bottom: 20px;
 }
 
@@ -89,6 +89,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #fefefe;
   min-height: 300px;
+  left: 30px;
 }
 
 .notifications-content .card {
@@ -251,12 +252,11 @@ body {
 @media only screen and (max-width: 1200px) {
   .notifications-modal  {
     left: -350px;
-    /* overflow: auto;  */
-    position: absolute; /* Stay in place */
+    position: absolute; 
     z-index: 1; /* Sit on top */
     margin-top: 50px; /* Location of the box */
     top: -10px;
-    width: 400px; /* Full width */
+    width: 400px; 
     overflow: hidden; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #fefefe;
