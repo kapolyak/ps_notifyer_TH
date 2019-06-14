@@ -17,8 +17,10 @@
     "morgan": "^1.9.1",
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-dom": "^16.8.6",
     "react-hot-loader": "^4.8.4",
+    "react-transition-group": "^1.2.1",
     "victory": "^32.2.2"
   },
   "devDependencies": {
