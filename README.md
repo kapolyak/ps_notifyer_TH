@@ -1,5 +1,5 @@
 # Paperspace Notifier
-Take-home challenge for Paperspace
+Take-home challenge for Paperspace.
 
 ## Development:
 
@@ -9,9 +9,11 @@ Installing dependencies:
 npm install
 ```
 
-To run in developer mode: 
+To run the application in non-development mode from within the root directory: 
+```sh
+npm run build
+npm start
+```
 
-```
-npm run build-dev
-npm run start-dev
-```
+Then access the application at (http://localhost:3001).
+
