@@ -53,6 +53,7 @@ class NotificationsModal extends React.Component {
                 </svg>
               </div>
               <h2>{this.props.notifications[this.state.selectedNotificationIndex].title}</h2>
+              <div className="header-balance-invisible"></div>
             </div>
             <NotificationView notification={currentNotification} />
           </div>

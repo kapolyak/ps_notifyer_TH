@@ -104,20 +104,19 @@ body {
   flex-direction: row;
   border-bottom: 1px solid #f3f3f3;
   padding-bottom: 10px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .notifications-content .header h2 {
   font-size: 16px;
   font-weight: bold;
-  align-self: center
+  margin: 0 auto;
 }
 
 .notifications-content .header .arrow-container {
   height: 16px; 
   width: 16px; 
   fill: currentcolor;
-  align-self: start;
 }
 
 .notifications-list-item-container {
