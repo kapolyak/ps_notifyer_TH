@@ -57,7 +57,7 @@ class App extends React.Component {
 
   checkNotifications() {
     let notifications = this.state.changelogs.slice(this.state.latestChangelogSeenById);
-    this.setState({notifications: notifications})
+    this.setState({notifications: notifications, hasNotifications: true})
   }
 
   render() {
