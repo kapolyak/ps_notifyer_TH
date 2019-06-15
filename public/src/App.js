@@ -28,7 +28,7 @@ class App extends React.Component {
         })
       })
       .catch((e) => {
-        console.log('Error fetching notifications', e)
+        console.log('Error fetching changelogs', e)
       })
   }
 
@@ -73,4 +73,4 @@ class App extends React.Component {
   }
 }
 
-export default hot(module)(App) 
+export default App
